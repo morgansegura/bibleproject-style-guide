@@ -1,16 +1,29 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Layout, Hero } from '../../components'
+import { Layout, Hero, SectionGrid, SectionItem } from '../../components'
 import { VideoButton } from '../../components/button'
-import { LogoDefault, LogoIcon } from '../../components/logo'
 import { IoPlaySharp } from 'react-icons/io5'
 
-const Home = () => {
+const Components = () => {
 	return (
 		<Layout>
-			<LogoIcon className='w-8' />
-			<LogoDefault className='h-10' />
-			<div className='max-w-screen-tv mx-auto'>
+			<div className='max-w-screen-tv mt-14 mx-auto px-8'>
+				<div className=''>
+					<h2 className='text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl'>
+						Consumer Site
+					</h2>
+					<SectionGrid title='Page Sections'>
+						<SectionItem
+							count={10}
+							badge={true}
+							image='https://tailwindui.com/img/category-thumbnails/sections-blog-sections.svg'
+							title='Hero Sections'
+							to=''
+						/>
+					</SectionGrid>
+				</div>
+				{/*
 				<Hero className='px-8'>
 					<div className='text-white bg-darkslatepurple grid grid-cols-2'>
 						<div className='pl-20 py-32'>
@@ -57,9 +70,10 @@ const Home = () => {
 						</div>
 					</div>
 				</Hero>
+				*/}
 			</div>
 		</Layout>
 	)
 }
 
-export default Home
+export default Components

@@ -6,6 +6,9 @@ module.exports = {
 			colors: {
 				darkslatepurple: '#5e4b7d',
 			},
+			opacity: {
+				15: '1.5',
+			},
 			screens: {
 				tv: '141rem',
 			},
@@ -42,6 +45,7 @@ module.exports = {
 	variants: {
 		extend: {
 			scale: ['focus-within', 'hover'],
+			opacity: ['hover'],
 		},
 	},
 	plugins: [],

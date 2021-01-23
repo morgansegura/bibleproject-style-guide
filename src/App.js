@@ -6,7 +6,7 @@ import {
 	Switch,
 } from 'react-router-dom'
 
-import { Home } from './pages'
+import { Components } from './pages'
 
 const App = () => {
 	const isLoggedIn = false
@@ -17,10 +17,10 @@ const App = () => {
 	} else {
 		routes = (
 			<Switch>
-				<Route path='/' exact>
-					<Home />
+				<Route path='/components' exact>
+					<Components />
 				</Route>
-				<Redirect to='/' />
+				<Redirect to='/components' />
 			</Switch>
 		)
 	}
