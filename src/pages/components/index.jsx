@@ -1,29 +1,47 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-import { Layout, Hero, SectionGrid, SectionItem } from '../../components'
-import { VideoButton } from '../../components/button'
-import { IoPlaySharp } from 'react-icons/io5'
+import { Layout, SectionGrid, SectionItem } from '../../components'
+import { componentSectionsData } from '../../data'
+// import { VideoButton } from '../../components/button'
+// import { IoPlaySharp } from 'react-icons/io5'
 
 const Components = () => {
 	return (
 		<Layout>
-			<div className='max-w-screen-tv mt-14 mx-auto px-8'>
-				<div className=''>
-					<h2 className='text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl'>
-						Consumer Site
-					</h2>
-					<SectionGrid title='Page Sections'>
-						<SectionItem
-							count={10}
-							badge={true}
-							image='https://tailwindui.com/img/category-thumbnails/sections-blog-sections.svg'
-							title='Hero Sections'
-							to=''
-						/>
-					</SectionGrid>
-				</div>
-				{/*
+			<div className='pt-16'>
+				<div className='max-w-8xl mx-auto grid grid-cols-1 gap-y-16 px-4 py-4 sm:px-6 sm:py-12 lg:px-8'>
+					{componentSectionsData.map(({ id, title, block }) => (
+						<div id={id} key={id}>
+							<div class='pb-2'>
+								<div class='h-5'></div>
+							</div>
+							<h2 className='text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl'>
+								{title}
+							</h2>
+							{block.map(({ title, section }) => (
+								<SectionGrid title={title}>
+									{section.map(
+										({
+											count,
+											badge,
+											image,
+											title,
+											to,
+										}) => (
+											<SectionItem
+												count={count}
+												badge={badge}
+												image={image}
+												title={title}
+												to={to}
+											/>
+										)
+									)}
+								</SectionGrid>
+							))}
+						</div>
+					))}
+					{/*
 				<Hero className='px-8'>
 					<div className='text-white bg-darkslatepurple grid grid-cols-2'>
 						<div className='pl-20 py-32'>
@@ -71,6 +89,7 @@ const Components = () => {
 					</div>
 				</Hero>
 				*/}
+				</div>
 			</div>
 		</Layout>
 	)

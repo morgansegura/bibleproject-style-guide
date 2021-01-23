@@ -20,6 +20,7 @@ module.exports = {
 			},
 			maxWidth: {
 				tv: '141rem',
+				'8xl': '90rem',
 			},
 			fontFamily: {
 				sans: [
