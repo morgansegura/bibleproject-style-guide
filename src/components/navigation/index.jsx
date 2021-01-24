@@ -4,7 +4,11 @@ import { NavLink } from 'react-router-dom'
 const Navigation = () => {
 	return (
 		<div>
-			<NavLink to='/'>Home</NavLink>
+			<NavLink
+				className='text-sm hover:text-bpblue transition ease-out duration-300'
+				to='/components'>
+				Components
+			</NavLink>
 		</div>
 	)
 }

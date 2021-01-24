@@ -6,7 +6,7 @@ import {
 	Switch,
 } from 'react-router-dom'
 
-import { Components } from './pages'
+import { Components, HeroSection } from './pages'
 
 const App = () => {
 	const isLoggedIn = false
@@ -19,6 +19,9 @@ const App = () => {
 			<Switch>
 				<Route path='/components' exact>
 					<Components />
+				</Route>
+				<Route path='/components/sections/heroes' exact>
+					<HeroSection />
 				</Route>
 				<Redirect to='/components' />
 			</Switch>

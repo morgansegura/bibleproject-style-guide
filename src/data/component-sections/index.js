@@ -1,3 +1,4 @@
+import heroSections from '../../assets/images/sections-hero-sections.svg'
 export const componentSectionsData = [
 	{
 		id: 0,
@@ -10,9 +11,8 @@ export const componentSectionsData = [
 					{
 						id: 0,
 						title: 'Hero Sections',
-						image:
-							'https://tailwindui.com/img/category-thumbnails/sections-blog-sections.svg',
-						to: '/',
+						image: heroSections,
+						to: '/components/sections/heroes',
 						count: 10,
 						badges: false,
 					},

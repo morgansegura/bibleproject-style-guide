@@ -1,26 +1,34 @@
 import React from 'react'
 
-const VideoButton = props => {
+const VideoButton = ({
+	buttonColor,
+	children,
+	className,
+	icon,
+	iconColor,
+	onClick,
+	textColor,
+	style,
+}) => {
 	return (
 		<div
-			onClick={props.onClick}
-			style={props.style}
-			className={`cursor-pointer group flex items-center ${props.className}`}
-			textDisplay='white'>
+			onClick={onClick}
+			style={style}
+			className={`cursor-pointer group flex items-center ${className}`}>
 			<div
 				className={`fill-current border-2 flex items-center justify-center w-15 h-15 text-lg rounded-full border-${
-					props.buttonColor ? props.buttonColor : 'black'
+					buttonColor ? buttonColor : 'black'
 				}
                 text-${
-					props.iconColor ? props.iconColor : 'black'
+					iconColor ? iconColor : 'black'
 				} transform group-hover:scale-110 transition-transform ease-out duration-300`}>
-				<span className='ml-1'>{props.icon}</span>
+				<span className='ml-1'>{icon}</span>
 			</div>
 			<p
 				className={`text-xl ml-6 font-normal text-${
-					props.textColor ? props.textColor : 'black'
+					textColor ? textColor : 'black'
 				}`}>
-				{props.children}
+				{children}
 			</p>
 		</div>
 	)

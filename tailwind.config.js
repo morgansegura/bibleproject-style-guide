@@ -5,6 +5,8 @@ module.exports = {
 		extend: {
 			colors: {
 				darkslatepurple: '#5e4b7d',
+				bpblue: '#00B3E5',
+				bpBlack: '#010101',
 			},
 			opacity: {
 				15: '1.5',

@@ -1,2 +1,5 @@
+export { default as SectionCode } from './section-code'
+export { default as SectionDisplay } from './section-display'
 export { default as SectionGrid } from './section-grid'
 export { default as SectionItem } from './section-item'
+export { default as SectionView } from './section-view'
