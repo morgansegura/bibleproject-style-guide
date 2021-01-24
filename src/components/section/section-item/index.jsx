@@ -12,7 +12,7 @@ const SectionItem = ({ count, badge, image, title, to }) => {
 				</div>
 				<figcaption className='mt-3'>
 					<p className='flex items-baseline text-sm font-medium text-gray-900'>
-						<span> Hero Sections</span>
+						<span>{title}</span>
 						{badge && (
 							<span className='inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0'>
 								<span className='text-yellow-700'>New</span>

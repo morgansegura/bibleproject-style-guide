@@ -7,7 +7,7 @@ import {
 } from '../../../components'
 import { codeHeroSimple } from '../../../data'
 
-const HeroSection = () => {
+const FooterSection = () => {
 	const breadcrumbs = [
 		{
 			id: 0,
@@ -17,7 +17,7 @@ const HeroSection = () => {
 		{
 			id: 1,
 			title: 'Page Sections',
-			to: '/components#pageSections',
+			to: '/components#elementSections',
 		},
 	]
 
@@ -32,4 +32,4 @@ const HeroSection = () => {
 	)
 }
 
-export default HeroSection
+export default FooterSection

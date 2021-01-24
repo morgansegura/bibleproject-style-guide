@@ -9,17 +9,32 @@ const Components = () => {
 			<div className='max-w-8xl mx-auto grid grid-cols-1 gap-y-16 px-4 py-4 sm:px-6 sm:py-12 lg:px-8'>
 				{componentSectionsData.map(({ id, title, block }) => (
 					<div id={id} key={id}>
-						<div class='pb-2'>
-							<div class='h-5'></div>
+						<div className='pb-2'>
+							<div className='h-5'></div>
 						</div>
-						<h2 className='text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl'>
+						<h2
+							id='marketingSections'
+							className='text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl'>
 							{title}
 						</h2>
-						{block.map(({ title, section }) => (
-							<SectionGrid title={title}>
+						{block.map(({ id, title, section, sectionId }) => (
+							<SectionGrid
+								sectionId={sectionId}
+								title={title}
+								id={id}
+								key={id}>
 								{section.map(
-									({ count, badge, image, title, to }) => (
+									({
+										id,
+										count,
+										badge,
+										image,
+										title,
+										to,
+									}) => (
 										<SectionItem
+											key={id}
+											id={id}
 											count={count}
 											badge={badge}
 											image={image}
