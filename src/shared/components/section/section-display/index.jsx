@@ -11,10 +11,9 @@ const SectionDisplay = ({ itemTitle, bgcolor, code, language, view }) => {
 
 	const handleCopyCode = () => {
 		setCopyCode(true)
-		const timer = setTimeout(() => {
+		setTimeout(() => {
 			setCopyCode(false)
 		}, 1000)
-		clearInterval(timer)
 	}
 
 	return (
