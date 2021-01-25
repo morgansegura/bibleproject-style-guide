@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { SectionCode, SectionView } from '..'
 
@@ -14,6 +14,7 @@ const SectionDisplay = ({ itemTitle, bgcolor, code, language, view }) => {
 		const timer = setTimeout(() => {
 			setCopyCode(false)
 		}, 1000)
+		clearInterval(timer)
 	}
 
 	return (
@@ -67,7 +68,7 @@ const SectionDisplay = ({ itemTitle, bgcolor, code, language, view }) => {
 						<textarea
 							readOnly=''
 							className='sr-only whitespace-pre-wrap'
-							aria-hidden=''
+							aria-hidden='false'
 							x-ref='htmlClipboardCode'
 							tabIndex='-1'></textarea>
 					</div>
