@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Prism from 'prismjs'
-import '../../../assets/styles/prism.css'
+import '../../../../assets/styles/prism.css'
 
 const SectionCode = ({ className, code, language }) => {
 	useEffect(() => {

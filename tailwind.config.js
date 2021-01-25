@@ -6,7 +6,15 @@ module.exports = {
 			colors: {
 				darkslatepurple: '#5e4b7d',
 				bpblue: '#00B3E5',
-				bpBlack: '#010101',
+				bpseagreen: '#4d8b94',
+				bpblack: '#010101',
+			},
+			zIndex: {
+				1: '1',
+				'-1': '-1',
+			},
+			fontSize: {
+				'2.5xl': '1.7rem',
 			},
 			opacity: {
 				15: '1.5',
@@ -16,6 +24,7 @@ module.exports = {
 			},
 			spacing: {
 				15: '3.75rem',
+				30: '7.5rem',
 			},
 			minWidth: {
 				tv: '160rem',

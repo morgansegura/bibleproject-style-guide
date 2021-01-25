@@ -1,13 +1,10 @@
 import React from 'react'
 
-import {
-	LayoutSection,
-	SectionDisplay,
-	HeroSimpleCentered,
-} from '../../../components'
+import { LayoutSection, SectionDisplay } from '../../../shared/components'
+import { Header } from '../../../components'
 import { codeHeroSimple } from '../../../data'
 
-const FooterSection = () => {
+const HeaderElement = () => {
 	const breadcrumbs = [
 		{
 			id: 0,
@@ -16,20 +13,22 @@ const FooterSection = () => {
 		},
 		{
 			id: 1,
-			title: 'Page Sections',
+			title: 'Elements',
 			to: '/components#elementSections',
 		},
 	]
 
 	return (
-		<LayoutSection title='Hero Sections' breadcrumbs={breadcrumbs}>
+		<LayoutSection title='Headers' breadcrumbs={breadcrumbs}>
 			<SectionDisplay
 				language='js'
+				itemTitle='Header Default'
+				bgcolor='bg-gray-100'
 				code={codeHeroSimple}
-				view={<HeroSimpleCentered />}
+				view={<Header />}
 			/>
 		</LayoutSection>
 	)
 }
 
-export default FooterSection
+export default HeaderElement

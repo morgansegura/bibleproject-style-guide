@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LayoutGrid, SectionGrid, SectionItem } from '../../components'
+import { LayoutGrid, SectionGrid, SectionItem } from '../../shared/components'
 import { componentSectionsData } from '../../data'
 
 const Components = () => {

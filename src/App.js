@@ -6,7 +6,7 @@ import {
 	Switch,
 } from 'react-router-dom'
 
-import { Components, FooterSection, HeaderSection, HeroSection } from './pages'
+import { Components, FooterElement, HeaderElement, HeroSection } from './pages'
 
 const App = () => {
 	const isLoggedIn = false
@@ -21,10 +21,10 @@ const App = () => {
 					<Components />
 				</Route>
 				<Route path='/marketing/components/elements/footers' exact>
-					<FooterSection />
+					<FooterElement />
 				</Route>
 				<Route path='/marketing/components/elements/headers' exact>
-					<HeaderSection />
+					<HeaderElement />
 				</Route>
 				<Route path='/marketing/components/sections/heroes' exact>
 					<HeroSection />
