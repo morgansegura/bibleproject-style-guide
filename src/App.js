@@ -6,7 +6,13 @@ import {
 	Switch,
 } from 'react-router-dom'
 
-import { Components, FooterElement, HeaderElement, HeroSection } from './pages'
+import {
+	CardSection,
+	Components,
+	FooterElement,
+	HeaderElement,
+	HeroSection,
+} from './pages'
 
 const App = () => {
 	const isLoggedIn = false
@@ -17,6 +23,9 @@ const App = () => {
 	} else {
 		routes = (
 			<Switch>
+				<Route path='/marketing/components/sections/cards' exact>
+					<CardSection />
+				</Route>
 				<Route path='/marketing/components' exact>
 					<Components />
 				</Route>

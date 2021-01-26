@@ -20,7 +20,13 @@ const FooterElement = () => {
 
 	return (
 		<LayoutSection title='Footers' breadcrumbs={breadcrumbs}>
-			<SectionDisplay language='js' code={codeFooter} view={<Footer />} />
+			<SectionDisplay
+				language='js'
+				itemTitle='Footer Default'
+				bgcolor=''
+				code={codeFooter}
+				view={<Footer />}
+			/>
 		</LayoutSection>
 	)
 }

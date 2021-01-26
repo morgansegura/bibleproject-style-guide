@@ -1,6 +1,7 @@
-import heroSections from '../../assets/images/sections-hero-sections.svg'
-import headerSections from '../../assets/images/sections-header-sections.svg'
+import cardSections from '../../assets/images/sections-card-sections.svg'
 import footerSections from '../../assets/images/sections-footer-sections.svg'
+import headerSections from '../../assets/images/sections-header-sections.svg'
+import heroSections from '../../assets/images/sections-hero-sections.svg'
 
 export const componentSectionsData = [
 	{
@@ -17,6 +18,22 @@ export const componentSectionsData = [
 						title: 'Hero Sections',
 						image: heroSections,
 						to: '/marketing/components/sections/heroes',
+						count: 1,
+						badge: true,
+					},
+					{
+						id: 1,
+						title: 'Content Sections',
+						image: cardSections,
+						to: '/marketing/components/sections/content',
+						count: 1,
+						badge: true,
+					},
+					{
+						id: 2,
+						title: 'Card Sections',
+						image: cardSections,
+						to: '/marketing/components/sections/cards',
 						count: 1,
 						badge: true,
 					},
