@@ -45,21 +45,21 @@ export const componentSectionsData = [
 					},
 				],
 			},
-			{
-				id: 2,
-				title: 'Page Examples',
-				sectionId: 'pageExamples',
-				section: [
-					{
-						id: 0,
-						title: 'Home Screens',
-						image: headerSections,
-						to: '/',
-						count: 10,
-						badge: false,
-					},
-				],
-			},
+			// {
+			// 	id: 2,
+			// 	title: 'Page Examples',
+			// 	sectionId: 'pageExamples',
+			// 	section: [
+			// 		{
+			// 			id: 0,
+			// 			title: 'Home Screens',
+			// 			image: headerSections,
+			// 			to: '/',
+			// 			count: 10,
+			// 			badge: false,
+			// 		},
+			// 	],
+			// },
 		],
 	},
 ]
